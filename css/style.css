@@ -1,0 +1,151 @@
+body, html{
+	padding:0px;
+	margin:0px;
+}
+body *{
+	font-family:"Roboto" , sans-serif; 	
+	box-sizing:border-box;
+}
+header div.container{
+	max-width:1140px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+div.container{
+	padding-left:15px;
+	padding-right:15px;
+	max-width:870px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.outer__header{
+	display: flex;
+	align-items:center;
+	justify-content: space-between;
+	padding:17px 0px;
+}
+.logo__wrapper>a{
+	display: flex;
+	align-items:center;
+	justify-content: center;
+	transition:.4s ease all
+}
+.logo__wrapper>a:hover{
+	opacity:.7;
+}
+.center__list ul{
+	padding: 0px;
+	list-style-type: none;
+	margin:0px;
+	display: flex;
+	align-items:center;
+	justify-content: center;
+}
+.right__info>a{
+	min-width: 80px;
+	min-height:35px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border:1px solid #ea0023;
+	color:#ea0023;
+	font-size:15px;
+	text-decoration:none;	
+	transition:.4s ease all;
+}
+.right__info>a:hover{
+	opacity:.7;
+}
+.center__list ul li{
+	margin-right:20px;
+}
+.center__list ul li a:before{
+	content:"";
+	position: absolute;
+	left:0px;
+	bottom:-3px;
+	height:2px;
+	width:0px;
+	transition:.5s ease all;
+	background-color: #D62E30;
+}
+.center__list ul li a:hover:before{
+	width:100%;
+}
+.center__list ul li.active__list a:before{
+	content:"";
+	position: absolute;
+	left:0px;
+	bottom:-3px;
+	height:2px;
+	width:100%;
+	background-color: #D62E30;
+}
+.center__list ul li:last-child{
+	margin-right:0px;
+}
+.center__list ul li a{
+	color:#000;
+	font-size:15px;
+	position: relative;
+	transition:.4s ease all;
+	text-decoration: none;
+}
+header>.container{
+	max-width:1260px;
+	padding-left:15px;
+	padding-right:15px;
+}
+.container{
+	max-width:870px;
+}
+.video__main{
+	padding-top:40px;
+}
+.outer__video{
+	min-height:420px;
+	width:100%;
+	display: flex;
+	align-items:center;
+	justify-content: center;
+	max-width:640px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.video__block{
+	min-height:100%;
+	width:100%;
+	display: flex;
+	align-items:center;
+	justify-content: center;
+	position: relative;
+}
+.video__main>img{
+	width: 100%;
+	margin-top:-90px;
+}
+.play__video{
+	position: absolute;
+	left:0px;
+	right:0px;
+	margin-right:auto;
+	margin-left: auto;
+	max-width:100px;
+	cursor: pointer;
+	transition:.4s ease all;
+}
+.play__video:hover{
+	opacity: .7;
+}
+.play__video>img{
+	width: 100%;
+}
+.overlay__video{
+	height:420px;
+	background:url('../img/videoback.png');
+	background-repeat: no-repeat;
+	width:100%;
+	background-size:cover;
+	background-position:center;
+}
