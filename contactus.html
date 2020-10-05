@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://kit.fontawesome.com/f982e94d70.js" crossorigin="anonymous"></script>
+	<link rel="icon" type="image/png" href="img/favicon.ico"/>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	<script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5Fz8Dlaajl_EuArOMqi0l7ivVcnHC7J4&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="outer__header">
+				<div class="logo__wrapper">
+					<a href="#"><img src="img/logo.svg" alt="logo"></a>
+				</div>
+				<div class="center__list">
+					<ul>
+						<li ><a href="#">Home</a></li>
+						<li><a href="#">About us</a></li>
+						<li class="drop__li active__list"><a href="#">Programmers</a>
+							<div class="dropdown__block" style="display:none;">
+								<ul>
+									<li><a href="#">Jake</a></li>
+									<li><a href="#">Rebecca</a></li>
+									<li><a href="#">Jordan</a></li>
+									<li><a href="#">Nikitronus</a></li>
+								</ul>
+							</div>
+						</li>
+						<li><a href="#">Resources</a></li>
+						<li><a href="#">Contact us</a></li>
+					</ul>
+				</div>
+				<div class="right__info">
+					<a href="#">Login</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="contact__block">
+		<div class="container">
+			<div class="outer__contact">
+				<h2>How can we help?</h2>
+			</div>
+		</div>
+	</div>
+	<div class="contact__us--block">
+		<div class="container">
+			<div class="outer__contact--us">
+				<h2>Contact us</h2>
+				<p>Resuscitation Council UK <br>
+				5th Floor <br>
+				Tavistock House North <br>
+				Tavistock Square <br>
+				London <br>
+				WC1H 9HR</p>
+			</div>
+		</div>
+	</div>
+	<div class="map__block">
+		<div id="map"></div>
+	</div>
+	<script>
+      let map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById("map"), {
+          center: {
+            lat: 51.525765,
+            lng:-0.128621,
+          },
+          zoom:17
+        });
+
+        var myLatlng = new google.maps.LatLng( 51.525765,-0.128621);
+        new google.maps.Marker({
+	    position: myLatlng,
+		    map,
+		    title: "Resuscitation Council UK\n5th Floor\nTavistock House North\nTavistock Square\nLondon\nWC1H 9HR",
+		  });
+      }
+    </script>
+	<footer>
+		<div class="container">
+			<div class="outer__foot">
+				<div class="logo__footer">
+					<div class="main__logo">
+						<a href="#">
+							<img src="img/footmain.svg" alt="footmain">
+						</a>
+					</div>
+					<div class="logo__double">
+                       <div class="elem__logo">
+   							<img src="img/footlogo1.png" alt="footlogo">
+                       </div>
+                       <div class="elem__logo">
+   							<img src="img/footlogo2.png" alt="footlogo">
+                       </div>
+					</div>
+					<div class="solo__logo">
+						<div class="elem__logo">
+							<img src="img/footlogo3.png" alt="footlogo">
+						</div>
+					</div>
+				</div>
+				<div class="footer__info">
+					<ul>
+						<li><a href="#">Privacy policy</a></li>
+						<li><a href="#">Terms</a></li>
+					</ul>
+					<ul class="socials__footer">
+						<li><a href="#"><i class="fab fa-youtube"></i></a></li>
+						<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+						<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+					</ul>
+					<p>Copyright ©2014 - 2020</p>
+					<p>Resuscitation Council (UK) is a registered Charity No. 1168914. </p>
+					<p>Resuscitation Council (UK) Trading Ltd is registered as a Company limited by guarantee in England & Wales No. 0299414. Registered office at 5th Floor, Tavistock House North, Tavistock Square, London WC1H 9HR.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
