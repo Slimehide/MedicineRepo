@@ -10,7 +10,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-	<!-- <header>
+	<header>
 		<div class="container">
 			<div class="outer__header">
 				<div class="logo__wrapper">
@@ -18,9 +18,18 @@
 				</div>
 				<div class="center__list">
 					<ul>
-						<li><a href="#">Home</a></li>
-						<li class="active__list"><a href="#">About us</a></li>
-						<li><a href="#">Programmers</a></li>
+						<li ><a href="#">Home</a></li>
+						<li><a href="#">About us</a></li>
+						<li class="drop__li active__list"><a href="#">Programmers</a>
+							<div class="dropdown__block" style="display:none;">
+								<ul>
+									<li><a href="#">Jake</a></li>
+									<li><a href="#">Rebecca</a></li>
+									<li><a href="#">Jordan</a></li>
+									<li><a href="#">Nikitronus</a></li>
+								</ul>
+							</div>
+						</li>
 						<li><a href="#">Resources</a></li>
 						<li><a href="#">Contact us</a></li>
 					</ul>
@@ -30,63 +39,58 @@
 				</div>
 			</div>
 		</div>
-	</header> -->
-	<div class="about__block">
+	</header>
+	<div class="profile__head">
 		<div class="container">
-			<div class="outer__about">
-				<h2>About us</h2>
-			</div>
+			<div class="outer__profile"></div>
 		</div>
 	</div>
-	<div class="about__text">
-		<div class="container">
-			<div class="outer__txt">
-				<h2>About us</h2>
-				<p>Resuscitation Council UK is saving lives by developing guidelines, inﬂuencing policy, delivering courses and supporting cutting-edge research. Through education, training and research, we’re working towards the day when everyone in the country has the skills they need to save a life.</p>
+	<div class="prof__settings--wrap">
+		<div class="profile__settings">
+			<div class="inner__profile--settings">
+				<h2>Profile settings</h2>
 			</div>
-		</div>
-	</div>
-	<div class="partners__block">
-		<div class="container">
-			<div class="outer__partners">
-				<div class="head__partners">
-					<h2>Our partners and clients</h2>
+			<form action="">
+				<div class="group__profile">
+					<p>First Name</p>
+					<input type="text">
 				</div>
-				<div class="inner__partners">
-					<div class="elem__partner">
-						<img src="img/story1.svg" alt="story1">
-					</div>
-					<div class="elem__partner">
-						<img src="img/story2.svg" alt="story1">
-					</div>
-					<div class="elem__partner">
-						<img src="img/story3.svg" alt="story1">
-					</div>
-					<div class="elem__partner">
-						<img src="img/story4.svg" alt="story1">
-					</div>
-					<div class="elem__partner">
-						<img src="img/story5.svg" alt="story1">
-					</div>
-					<div class="elem__partner">
-						<img src="img/story6.svg" alt="story1">
-					</div>
-					<div class="elem__partner">
-						<img src="img/story7.svg" alt="story1">
-					</div>
-					<div class="elem__partner">
-						<img src="img/story1.svg" alt="story1">
-					</div>
+				<div class="group__profile">
+					<p>Last Name</p>
+					<input type="text">
 				</div>
-			</div>
-		</div>
-	</div>
-	<div class="programme__block">
-		<div class="container">
-			<div class="outer__programme">
-				<h2>Find a programme that is right for you</h2>
-				<a href="#">Contact us</a>
-			</div>
+				<div class="group__profile">
+					<p>Email Address</p>
+					<input type="text">
+				</div>
+				<div class="group__profile">
+					<p>Username</p>
+					<input type="text">
+				</div>
+				<div class="group__profile pass__group">
+					<a href="#"><i class="fas fa-eye"></i></a>
+					<p>Password*</p>
+					<input type="password">
+				</div>
+				<div class="drop__zone">
+					<input type="file">
+					<h6>Click to choose a profile image</h6>
+				</div>
+				<div class="additional__profile">
+					<h6>Marketing Preferences</h6>
+					<p>Choose below if you would like to receive updates from us</p>
+				</div>
+				<div class="group__checkbox check__first">
+					    <p>
+						    <input type="checkbox" id="checkbox1" />
+						    <label for="checkbox1">News, offers, course updates, marketing and other programmers that we deem relevant to you.</label>
+						</p>
+					</div>
+
+				<div class="group__submit">
+					<input type="submit" value="Update">
+				</div>
+			</form>
 		</div>
 	</div>
 	<footer>
