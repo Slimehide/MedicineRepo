@@ -1,4 +1,6 @@
 $(document).ready(function(){
+
+
 	$(".drop__li>a").on("focus" ,function(e){
 		e.preventDefault();
 	});
